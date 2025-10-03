@@ -1,0 +1,272 @@
+#home-banner {
+  position: relative;
+  width: 100%;
+  height: 80vh; 
+  background: linear-gradient(
+    0deg,
+    #ffffff 0%,
+    #ffffff 15%,
+    #dbdbdb 30%,
+    #9c9c9c 50%,
+    #666666 60%,
+    #232323 80%,
+    #181717 85%,
+    #0a0a0a 90%,
+    #000000 95%,
+    #000000 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* hide any content overflow */
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 90%; /* reduce width for small screens */
+  padding: 20px;
+  margin-top: -300px;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0 20px; /* add horizontal padding */
+  flex-wrap: wrap; /* allow items to wrap on small screens */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  flex-wrap: wrap; /* wrap links if needed */
+}
+
+
+.hero-content h1 {
+    font-size: 2rem;
+  }
+
+.hero-content p {
+    font-size: 1rem;
+  }
+
+#strt {
+    all: unset;
+    border: solid 0.2px white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.071);
+  }
+
+
+
+#logo-img {
+    height: 80px;
+    width: 80px;
+  }
+
+.nav-link {
+    all: unset;
+    color: white;
+    font-size: 16px;
+  }
+
+#brand-name{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 170px;
+    
+  }
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  #strt {
+    all: unset;
+    border: solid 0.2px white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.071);
+  }
+
+  #logo-img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .nav-link {
+    all: unset;
+    color: white;
+    font-size: 16px;
+  }
+
+  #brand-name{
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  #strt{
+    all: unset;
+    border: solid 0.2px white;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.071);
+  }
+
+  #logo-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+    .nav-link {
+        all: unset;
+        color: white;
+        font-size: 14px;
+    }
+
+    #brand-name{
+        color: white;
+    }
+
+}
+
+/* sample css */
+
+.achievements-section {
+  position: relative;
+  z-index: 2;  /* above banner */
+  text-align: center;
+  margin: 40px auto;
+  margin-top: -275px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 45px; /* ensures space before cards */
+  color: #ffffff; /* adjust for visibility */
+  text-align: center
+}
+
+.achievement-list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    /* margin-top: -225px; */
+}
+
+
+.achievement-card {
+  width: 200px;
+  height: 100px;
+  background-color: #0303031f;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.achievement-card h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: #000000;
+}
+
+.achievement-card p {
+  font-size: 0.7rem;
+  margin: 5px 0 0 0;
+  color: #555555;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+  }
+
+  .achievement-card h2 {
+    font-size: 0.9rem;
+  }
+
+  .achievement-card p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+  }
+
+  .achievement-card h2 {
+    font-size: 0.8rem;
+  }
+
+  .achievement-card p {
+    font-size: 0.5rem;
+  }
+}

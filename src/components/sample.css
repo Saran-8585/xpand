@@ -1,0 +1,65 @@
+.featured-works {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.white-title {
+  font-size: 2rem;
+  margin-bottom: 45px;
+  color: #000;
+  text-align: center;
+}
+
+/* Carousel container */
+.logo-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  gap: 40px;
+  width: calc(200%); /* 🔥 double width for duplicated logos */
+  animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* move by half so next set replaces first */
+  }
+}
+
+
+.logo-item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: #000 1px solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%); /* optional styling */
+  transition: filter 0.3s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0%);
+}
+
+
